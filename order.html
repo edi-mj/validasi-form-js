@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pesan tiket nonton tinju." />
+    <title>Order</title>
+    <!-- Koneksi file eksternal css -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/order.css" />
+  </head>
+  <body>
+    <!-- header start -->
+
+    <div class="header">
+      <!-- header logo -->
+      <img src="images/logo.png" alt="logo" />
+      <h1>A07 <span class="left">Box</span><span class="right">ing</span></h1>
+    </div>
+
+    <!-- header end -->
+
+    <!-- menu start -->
+
+    <div class="menu">
+      <a href="index.html">Beranda</a>
+      <a href="order.html" class="page-saat-ini">Beli Tiket</a>
+      <a href="evaluation.html">Evaluasi</a>
+      <a href="about_us.html">Tentang Kami</a>
+    </div>
+
+    <!-- menu end -->
+
+    <!-- content start -->
+
+    <div class="content">
+      <!-- container form start -->
+      <div class="container-form">
+        <!-- judul form start -->
+        <div class="judul-form">
+          <h2>Pemesanan Anda</h2>
+          <p>Untuk pemesanan tiket, silakan isi data Anda.</p>
+          <hr />
+          <p class="merah">* Menunjukkan data yang wajib diisi</p>
+        </div>
+        <!-- judul form end -->
+
+        <!-- data form start-->
+        <div class="data-form">
+          <form action="index.html" method="POST" id="form-pesan-tiket">
+            <label for="nama-lengkap"
+              >Nama Lengkap <span class="merah">*</span></label
+            >
+            <input
+              type="text"
+              id="nama-lengkap"
+              placeholder="Masukkan nama lengkapmu"
+            />
+            <span id="nama-error" class="pesan-error merah"></span><br />
+
+            Jenis Kelamin
+            <div class="jenis-kelamin">
+              <input type="radio" name="jenis-kelamin" id="laki-laki" />
+              <label for="laki-laki">Laki-Laki</label>
+              <input type="radio" name="jenis-kelamin" id="perempuan" />
+              <label for="perempuan">Perempuan</label>
+            </div>
+
+            <br />
+            <label for="telepon"
+              >No. Telepon <span class="merah">*</span></label
+            >
+            <input type="text" id="telepon" placeholder="Cth: 081234567890" />
+            <span id="telepon-error" class="pesan-error merah"></span>
+
+            <br />
+            <label for="pilih-tiket"
+              >Pilih Tiket <span class="merah">*</span></label
+            >
+            <select id="pilih-tiket">
+              <option value="">Pilih di sini</option>
+              <optgroup
+                label="6 Juli - Newark, New Jersey (Harga: Rp. 400.000)"
+              >
+                <option value="pertandingan-1">
+                  - Shakur Stevenson vs. Artem Harutyunyan -
+                </option>
+                <option value="pertandingan-2">
+                  - O'Shaquie Foster vs. Robson Conceicao -
+                </option>
+              </optgroup>
+              <optgroup
+                label="6 Juli - Anaheim, California (Harga: Rp. 400.000)"
+              >
+                <option value="pertandingan-3">
+                  - Nate Diaz vs. Jorge Masvidal -
+                </option>
+                <option value="pertandingan-4">
+                  - Daniel Jacobs vs. Shane Mosley Jr. -
+                </option>
+              </optgroup>
+              <optgroup
+                label="6 Juli - Ontario, California (Harga: Rp. 400.000)"
+              >
+                <option value="pertandingan-5">
+                  - William Zepeda vs. Giovanni Cabrera -
+                </option>
+              </optgroup>
+              <optgroup label="13 Juli - Las Vegas (Harga: Rp. 300.000)">
+                <option value="pertandingan-6">
+                  - Janibek Alimkhanuly vs. Andrei Mikhailovich -
+                </option>
+                <option value="pertandingan-7">
+                  - Raymond Muratalla vs. Tevin Farmer -
+                </option>
+              </optgroup>
+              <optgroup label="13 Juli - Philadelphia (Harga: Rp. 300.000)">
+                <option value="pertandingan-8">
+                  - Jaron Ennis vs. Cody Crowley -
+                </option>
+              </optgroup>
+              <optgroup label="20 Juli - Texas (Harga: Rp. 700.000)">
+                <option value="pertandingan-9">
+                  - Mike Tyson vs. Jake Paul -
+                </option>
+                <option value="pertandingan-10">
+                  - Katie Taylor vs. Amanda Serrano -
+                </option>
+                <option value="pertandingan-11">
+                  - Ashton Sylve vs. Floyd Schofield -
+                </option>
+                <option value="pertandingan-12">
+                  - Julio Cesar Chavez Jr. vs. Darren Till -
+                </option>
+                <option value="pertandingan-13">
+                  - Neeraj Goyat vs. Whindersson Nunes -
+                </option>
+              </optgroup>
+              <optgroup label="27 Juli - London (Harga: Rp. 500.000)">
+                <option value="pertandingan-14">
+                  - Joe Joyce vs. Derek Chisora -
+                </option>
+                <option value="pertandingan-15">
+                  - Dennis McCann vs. Ionut Baluta -
+                </option>
+                <option value="pertandingan-16">- Aadam Hamed vs. TBA -</option>
+              </optgroup>
+            </select>
+            <span id="tiket-error" class="pesan-error merah"></span><br />
+
+            <label for="jumlah-tiket"
+              >Jumlah tiket <span class="merah">*</span></label
+            >
+            <input
+              type="text"
+              id="jumlah-tiket"
+              placeholder="Jumlah tiket maksimal 5"
+            />
+            <span id="jumlah-error" class="pesan-error merah"></span><br />
+
+            <label for="kode-voucher">Kode Voucher</label>
+            <input
+              type="text"
+              id="kode-voucher"
+              placeholder="Masukkan kode voucher"
+            />
+            <span id="voucher-error" class="pesan-error merah"></span><br />
+
+            <label for="pesan-tambahan">Pesan Tambahan</label>
+            <textarea
+              id="pesan-tambahan"
+              placeholder="Jika ada pesan tambahan, tuliskan di sini.."
+            ></textarea>
+
+            <label for="persetujuan"
+              >Setujui aturan dan kebijakan <span class="merah">*</span></label
+            >
+            <input type="checkbox" id="persetujuan" /><br />
+            <span id="persetujuan-error" class="pesan-error merah"></span>
+
+            <button type="submit" id="kirim">Kirim</button>
+          </form>
+        </div>
+        <!-- data form end -->
+      </div>
+      <!-- container form end -->
+    </div>
+    <!-- content end -->
+
+    <!-- sidebar start -->
+
+    <div class="sidebar">
+      <!-- sidebar item 1 start -->
+      <div class="sidebar-item">
+        <a href="index.html#jadwal">
+          <h4>Jadwal Pertarungan Tinju</h4>
+          <img src="images/jadwal.jpg" alt="Boxing Fight" />
+        </a>
+
+        <a
+          href="https://t4.ftcdn.net/jpg/05/75/14/49/240_F_575144983_u4PzOhbtazGZ1xrjkENx9Neoy5Z4Spma.jpg
+            "
+          class="sidebar-img-src"
+          target="_blank"
+          >Sumber Gambar</a
+        >
+        <a href="index.html#jadwal">
+          <div class="sidebar-item-info">
+            <h4>Jadwal Tinju</h4>
+            <p>
+              Ingin tahu pertarungan apa yang akan terjadi? Simak jadwal tinju
+              tahun 2024.
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- sidebar item 1 end -->
+
+      <!-- sidebar item 2 start -->
+      <div class="sidebar-item">
+        <a href="order.html">
+          <h4>Tiket Terpopuler</h4>
+          <img src="images/tiket_populer.jpg" alt="Mike Tyson vs. Jake Paul" />
+        </a>
+
+        <a
+          href="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0531%2Fr1339911_1296x729_16%2D9.jpg&w=920&h=518&scale=crop&cquality=80&location=origin&format=jpg"
+          class="sidebar-img-src"
+          target="_blank"
+          >Sumber Gambar</a
+        >
+        <a href="order.html">
+          <div class="sidebar-item-info">
+            <h4>20 Juli 2024 - Texas</h4>
+            <p>Mike Tyson vs. Jake Paul <br />8 rounds <br />Heavyweights</p>
+          </div>
+        </a>
+      </div>
+      <!-- sidebar item 2 end -->
+
+      <!-- sidebar item 3 start -->
+      <div class="sidebar-item item3">
+        <a href="index.html#sejarah-ali">
+          <h4>Mengingat Muhammad Ali</h4>
+          <img src="images/ali.jpg" alt="Muhammad Ali" />
+        </a>
+
+        <a
+          href="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1112%2Fbox_g_ali11_608x342.jpg&w=544&h=306&scale=crop&cquality=80&location=origin&format=jpg"
+          class="sidebar-img-src"
+          target="_blank"
+          >Sumber Gambar</a
+        >
+        <a href="index.html#sejarah-ali">
+          <div class="sidebar-item-info">
+            <h4>The Greatest</h4>
+            <p>
+              Mengingat Muhammad Ali, salah satu atlet terhebat yang pernah ada.
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- sidebar item 3 end -->
+    </div>
+
+    <!-- sidebar end -->
+
+    <!-- footer start -->
+
+    <div class="footer">
+      <div class="container-logo">
+        <!-- footer logo -->
+        <img src="images/logo.png" alt="logo" />
+        <h1>A07 <span class="left">Box</span><span class="right">ing</span></h1>
+      </div>
+      <hr />
+      <p class="footer-anggota">
+        Angger Maulana Effendi 23-155 - Maulana Ardiansyah 23-159 - Restu
+        Ishariyadi Ya'qub 23-162 - Muhammad Junaidi 23-171
+      </p>
+
+      <p>
+        &copy; 2024 DPW2023-2-A07 | <a href="about_us.html">Tentang Kami</a>
+      </p>
+    </div>
+
+    <!-- footer end -->
+
+    <!-- Koneksi file eksternal JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

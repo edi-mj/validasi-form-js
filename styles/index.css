@@ -1,0 +1,126 @@
+/* header content start */
+
+.content h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* header content end */
+
+/* header jadwal start */
+
+.content #jadwal {
+  padding-top: 3rem;
+}
+
+/* header jadwal end */
+
+/* paragraf content start  */
+
+.content p {
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+/* paragraf content end */
+
+/* link content start */
+
+.content a {
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* link content end */
+
+/* section pemain legendaris start */
+
+.sub-legendaris {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.text h2,
+.text p,
+.text a {
+  margin: auto;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.image-content {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15rem;
+  height: 20rem;
+  filter: grayscale(100%);
+}
+
+.ali {
+  background-image: url("../images/Muhammad_Ali.jpg");
+}
+
+.mike {
+  background-image: url("../images/Mike_Tyson.jpg");
+}
+
+.john {
+  background-image: url("../images/Christ_John.jpg");
+  background-position: left;
+}
+
+.rocky {
+  background-image: url("../images/Rocky_Marciano.jpg");
+}
+
+/* section pemain legendaris end */
+
+/* section jadwal start */
+
+.jadwal p {
+  text-align: center;
+}
+
+.subjadwal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.subjadwal .left {
+  background-color: red;
+  padding: 1rem;
+  width: 15rem;
+  text-align: center;
+}
+
+.subjadwal .right {
+  background-color: blue;
+  padding: 1rem;
+  width: 15rem;
+  text-align: center;
+}
+
+/* section jadwal end */

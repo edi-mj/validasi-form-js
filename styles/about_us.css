@@ -1,0 +1,87 @@
+/* container about us start */
+.about-us-content {
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+/* container about us end */
+
+/* Style Judul start */
+.content h2,
+.content h3 {
+  color: white;
+  text-align: center;
+  margin: 5px;
+}
+
+.about-us-content h4 {
+  margin-top: 10px;
+}
+/* Style judul end */
+
+/* styling list anggota kelompok start*/
+.anggota-kelompok {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.anggota-kelompok ul li {
+  margin-top: 5px;
+  list-style-type: none;
+}
+/* Styling list anggota kelompok end */
+
+/* container tabel & list sumber gambar start*/
+.container-tabel-tugas,
+.sumber-gambar {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+}
+/* container tabel & list sumber gambar end */
+
+/* styling tabel pembagian  tugas start */
+.about-us-content table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+table caption {
+  margin-bottom: 15px;
+}
+
+table th {
+  text-align: center;
+}
+
+tr th {
+  padding: 10px;
+  color: white;
+  background-color: #f00;
+  border-radius: 10px;
+}
+
+tr td {
+  padding: 12px;
+  border-bottom: 1px solid #f00;
+}
+/* styling tabel pembagian tugas end */
+
+/* list sumber gambar start*/
+.sumber-gambar ul li {
+  list-style-type: none;
+}
+.sumber-gambar ul li ul li {
+  margin: 5px 30px;
+  list-style-type: disc;
+}
+
+/* link sumber gambar */
+.sumber-gambar a {
+  text-decoration: none;
+  color: blue;
+}
+/* list sumber gambar end */

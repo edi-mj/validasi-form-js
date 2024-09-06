@@ -1,0 +1,45 @@
+/* styling container evaluasi*/
+.evaluation_content {
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+}
+
+/* styling pada table dalam content */
+.evaluation_content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  margin-bottom: 20px;
+}
+
+/* styling pada content tr th */
+thead tr th {
+  padding: 10px;
+  color: white;
+  background-color: #f00;
+  border-radius: 10px;
+}
+
+/* styling pada content tr td */
+.evaluation_content tr td {
+  padding: 12px;
+  border-bottom: 1px solid #f00;
+}
+
+/* styling link pada tabel */
+table a {
+  text-decoration: none;
+}
+table a:hover {
+  color: blue;
+}
+
+/* styling content tr td img */
+.evaluation_content tr td img {
+  width: 35px;
+}

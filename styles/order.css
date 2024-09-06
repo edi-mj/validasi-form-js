@@ -1,0 +1,97 @@
+/* container form start */
+.container-form {
+  width: 80%;
+  margin: auto;
+}
+/* container form end */
+
+/* container judul form & data form start */
+.judul-form,
+.data-form {
+  padding: 40px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+}
+/* container judul form & data form end */
+
+/* judul form start */
+.judul-form {
+  margin-bottom: 7px;
+}
+
+.judul-form h2 {
+  margin: 0px;
+}
+
+.judul-form p {
+  font-size: 14px;
+  margin: 7px 0px;
+}
+/* judul form end */
+
+/* field masukan form start */
+input[type="text"],
+select,
+textarea,
+.jenis-kelamin {
+  width: 100%;
+  margin-top: 12px;
+  padding: 15px;
+  background-color: #23262b;
+  color: #f0f0f0;
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 10px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover,
+select:hover {
+  cursor: pointer;
+}
+
+form .jenis-kelamin,
+#pesan-tambahan {
+  margin-bottom: 12px;
+}
+
+select optgroup,
+option {
+  font-size: 14px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  width: 100%;
+  background-color: #f00;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* field masukan form end */
+
+/* error info start */
+.merah {
+  color: #ff4500;
+}
+
+.pesan-error {
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  margin-left: 2%;
+  font-size: 12px;
+}
+/* error info end */

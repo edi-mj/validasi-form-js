@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif, Helvetica, Arial;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "content sidebar"
+    "footer footer";
+  grid-template-columns: 75% auto;
+  background-color: #23262b;
+  color: white;
+}
+
+/* header start */
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #0a0a0a;
+}
+
+/* logo */
+
+.header img,
+.footer img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header h1 .left,
+.footer h1 .left {
+  color: red;
+}
+
+.header h1 .right,
+.footer h1 .right {
+  color: blue;
+}
+
+/* header end */
+
+/* menu start */
+
+.menu {
+  grid-area: nav;
+  position: sticky;
+  top: -1px;
+  margin-bottom: 30px;
+  padding: 5px;
+  background-color: #1d1f22;
+  border-bottom: 2px solid #f0f0f0;
+  z-index: 1;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 8px;
+  margin-right: 2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: red;
+}
+
+.page-saat-ini {
+  background-color: red;
+}
+
+/* menu end */
+
+/* content start */
+
+.content {
+  grid-area: content;
+  padding: 20px;
+}
+
+/* content end */
+
+/* sidebar start */
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar-item {
+  background-color: #0a0a0a;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.sidebar img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+  margin-top: 10px;
+}
+
+.sidebar-img-src {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+
+.sidebar-img-src:hover {
+  color: blue;
+}
+
+.sidebar-item-info {
+  background-color: #f00;
+  margin-top: 10px;
+  padding: 15px 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* sidebar end */
+
+/* footer start */
+
+.footer {
+  grid-area: footer;
+  background-color: #1d1f22;
+  margin-top: 100px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer .container-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-anggota {
+  margin: 10px 0;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: blue;
+}
+
+/* footer end */
